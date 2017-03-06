@@ -1,0 +1,22 @@
+{
+  "triggers": [
+    {
+      "name": "tibco-rest",
+      "settings": {
+        "port": "9999"
+      },
+      "endpoints": [
+        {
+          "actionType": "flow",
+          "actionURI": "embedded://myflow",
+          "settings": {
+            "autoIdReply": "true",
+            "method": "GET",
+            "path": "/flow",
+            "useReplyHandler": "true"
+          }
+        }
+      ]
+    }
+  ]
+}
