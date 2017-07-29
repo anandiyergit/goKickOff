@@ -6,20 +6,19 @@ package main
 // 	"time"
 // )
 
-// func f(n int) {
-// 	for i := 0; i < 10; i++ {
-// 		fmt.Println(n, ":", i)
-// 	}
-// 	fmt.Println("No. of goroutines active are:", runtime.NumGoroutine())
+// func main() {
+// 	fmt.Println("Start the goroutines program...")
+// 	go meraMethod()
+// 	time.Sleep(1 * time.Second)
+
+// 	fmt.Println("Final No. of go-routines:", runtime.NumGoroutine())
+// 	fmt.Println("Terminating the program...")
+
 // }
 
-// func main() {
-// 	for index := 0; index < 50; index++ {
-// 		go f(index)
+// func meraMethod() {
+// 	for index := 0; index < 10; index++ {
+// 		fmt.Println(index)
+// 		fmt.Println("No. of go-routines:", runtime.NumGoroutine())
 // 	}
-// 	time.Sleep(2 * time.Second)
-// 	fmt.Println("Finished!")
-// 	fmt.Println("No. of goroutines active are:", runtime.NumGoroutine())
-// 	var input string
-// 	fmt.Scanln(&input)
 // }
